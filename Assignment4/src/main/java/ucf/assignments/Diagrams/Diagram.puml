@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class HelloApplication
+class ItemData
+class ItemController
+
+HelloApplication : main (launch)
+ItemController : initialize (button and file actions)
+ItemData : task (constructor and format for table columns)
+
+HelloApplication -> ItemController: launch gui page
+ItemController -> ItemData: storage setup/action
+ItemData -> ItemController: data displayed in proper format
+
+
+@enduml
